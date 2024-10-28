@@ -11,15 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('comics', function (Blueprint $table) {
-            Schema::create('comics', function (Blueprint $table) {
+        Schema::create("comics", function (Blueprint $table) {
+            Schema::create("comics", function (Blueprint $table) {
                 $table->id(); // id incrementale
-                $table->string('title', 100)->nullable(false);
-                $table->text('description')->nullable(true);
-                $table->string('image', 1024)->nullable(false);
-                $table->string('series', 64)->nullable(false);
-                $table->decimal('price', 8, 2)->unsigned();
-                $table->string('type', 64)->nullable(false);
+                $table->string("title", 100)->nullable(false);
+                $table->text("description")->nullable(true);
+                $table->string("image", 1024)->nullable(false);
+                $table->string("series", 64)->nullable(false);
+                $table->decimal("price", 8, 2)->unsigned();
+                $table->string("type", 64)->nullable(false);
                 $table->timestamps(); 
             });
         });
