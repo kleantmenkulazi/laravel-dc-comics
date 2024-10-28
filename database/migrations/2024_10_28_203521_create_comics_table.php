@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create("comics", function (Blueprint $table) {
+         
             Schema::create("comics", function (Blueprint $table) {
                 $table->id(); // id incrementale
                 $table->string("title", 100)->nullable(false);
@@ -22,7 +22,7 @@ return new class extends Migration
                 $table->string("type", 64)->nullable(false);
                 $table->timestamps(); 
             });
-        });
+        
     }
 
     /**
