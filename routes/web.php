@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DcComicController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::resource('/', DcComicController::class)->names('comics');
+// Route::get('/', [DcComicController::class, 'index']);
+Route::get('/', [DcComicController::class, 'index']);
+Route::resource('comics', DcComicController::class);
